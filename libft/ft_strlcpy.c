@@ -13,12 +13,11 @@
 #include "libft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
+//					ft_strlcpy(((void*)0), ((void*)0), 10);
 {
 	size_t	src_len;
 	size_t	i;
 
-	if (!src)
-		return (0);
 	src_len = ft_strlen(src);
 	if (dst == NULL || dstsize == 0)
 		return (src_len);
